@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Where dreams come true 🌈</title>
+    <link rel="stylesheet" href="Project CSS.css">
+
+
+</head>
+<body class="Background">
+    <div>
+        <div>
+            <form class= "Float-center" id="form1" onsubmit="return confirmSubmit()">
+                <div class="Float-center">
+                    <h1 class="cursive">You're closer to your goal than you realise 😊</h1>
+                    <h3 class="underline">Fill the forms below: </h3>
+                    <div class="Border">
+                    <label>First Name: <input type="text" name="firstName" required="required" size="20" maxlength="30"/></label>
+                    <br><br>
+
+                    <label>Last Name: <input type="text" name="lastName" required="required" size="20" maxlength="30"/></label>
+                    <br><br>
+                    <label>Username:<input type="text" name="username" size="20" maxlength="30"/></label>
+                    <br><br>
+
+                    <label>Email: <input type="email" name="Email"  required="required" size="20" maxlength="30"/></label>
+                    <br><br>
+                
+                    <label>Phone Number: <input type="tel" name="phone" required="required" size="20" maxlength="30"/></label>
+                    <br><br>
+
+                    <label>Age: <input type="number" name="age" required="required" size="20" maxlength="30"/></label>
+                    <br><br>
+                
+                    <label for="choice">Do you want to acheive your dream, or have you acheived it?</label> <br>
+                    <input type="radio" name="dreamStatus" value="no" onclick="handleSelection()"/>I'm a Dreamer
+                    <input type="radio" name="dreamStatus" value="yes" onclick="handleSelection()"/> Achieved it 
+                    </div>
+                </div>
+                <br><br>
+                
+               <div id="Dreamer" class="hidden">
+                <div class="WBorder" id="DR">
+                    <h3 class="underline">Welcome to the Dreamers Hour!</h3>
+                    <p>We are excited to help you on your journey. Please fill out the form below to get started.</p>
+                    <br><br>
+                    <label>Here are our cost fees based  on what you desire</label><br>
+                    <input type="checkbox" name="price" value="0">Free however you only get one hour.<br>
+                    <input type="checkbox" name="price" value="25"> First steps ($25)<br>
+                    <input type="checkbox" name="price" value="50">Day Dreamer ($50)<br>
+                    <input type="checkbox" name="price" value="100">Beyond potential ($100)<br>
+
+                    <label for="date">Choose a date to start from:</label>
+                    <input type="date" id="SdateDreamer" name="from date" value="">
+                    <br><br>
+                    <label for="date">Choose an end date:</label>
+                    <input type="date" id="EdateDreamer" name="to date" value=""><br><br>
+
+                    <label>Tell us your dream:</label><br>
+                    <textarea class="Border" name="dream" rows="10" cols="100"></textarea><br><br>
+
+                    <button type="button"class="button" onclick="FeeCalc()">Calculate</button> &nbsp;
+                    <button type="submit" class="button" >submit</button>
+                </div>
+               </div>
+
+                <div id="Achieved" class="hidden">
+                    <div class="BlckBorder" id="ACH">
+                    
+                    <h3 class="underline">Congratulations on your achievement!</h3>
+                    <p>We are excited to help you share your success. Please fill out the form below to get started.</p>
+                    <br><br>
+                    <label>Here are our payment fees based on how long you present your dream</label><br>
+                    <input type="checkbox" name="price" value="10"> 1 hour ($10).<br>
+                    <input type="checkbox" name="price" value="25"> 3 hours ($30)<br>
+                    <input type="checkbox" name="price" value="50"> 5 hours ($50)<br>
+                    <input type="checkbox" name="price" value="100"> 1 on 1 ($100)<br>
+                    <br><br>
+
+                    <label for="date">Choose a date to start from:</label>
+                    <input type="date" id="SdateAchieved" name="from date">
+                    <br><br>
+                    <label for="date">Choose an end date:</label>
+                    <input type="date" id="EdateAchieved" name="to date"><br><br>
+                    <p>More days may make you eligable for a bonus, but that can be discussed later</p>
+                    <br><br>
+                    <label>We would love to hear your story and how you achieved your dream. Please share your experience with us.</label><br>
+                    <textarea class="Border" name="dream" rows="10" cols="100"></textarea>
+                    <br><br>
+                    <button type="button"class="button" onclick="FeeCalc()">Calculate</button> &nbsp;
+                    <button type="submit" class="button">submit</button>
+                    </div>
+                </div>
+
+                </label>
+
+            </form>
+            <br><br>
+            <div class="Float-center">
+            <a href="./HomePage.html" class="button">Back to Home</a> &nbsp;&nbsp;
+            <a href="./Details page.html" class="button">About Us</a> &nbsp;&nbsp;
+            <a href="./Contact Us page.html" class="button">Contact Us</a> &nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="Project JS.js"></script>
+   
+</body>
+</html>
