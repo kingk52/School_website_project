@@ -20,12 +20,11 @@ A web application developed as part of a group project, designed to be a course 
 - Implemented reactive buttons, CSS foundation used for all pages 
 - Assisted in debugging and testing
 
-## 📷 Screenshots
-(Add screenshots here)
+## Screenshots
 <img width="1401" height="861" alt="image" src="https://github.com/user-attachments/assets/8959086e-1539-4f4a-b38d-b0611c9e6145" />
 
 
-## 🚀 What I Learned
+## What I Learned
 - Web development fundamentals
 - Working in a team environment
 - Debugging and problem-solving
